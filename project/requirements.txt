@@ -1,0 +1,22 @@
+# Core Django dependencies
+Django>=4.2,<5.0
+gunicorn>=21.2.0
+
+# Database dependencies
+psycopg2-binary>=2.9.9  # PostgreSQL adapter
+
+# Environment variable management
+python-dotenv>=1.0.1  # To load .env variables
+
+# AWS dependencies (for SSM Parameter Store)
+boto3>=1.34.60  # AWS SDK for Python
+
+# Security and Authentication
+django-environ>=0.11.2  # Alternative env management
+dj-database-url>=2.1.0  # Parse database URL from env variables
+
+# Static file management
+whitenoise>=6.6.0  # Helps serve static files in production
+
+# Production optimizations
+django-redis>=5.4.0  # Redis cache support
